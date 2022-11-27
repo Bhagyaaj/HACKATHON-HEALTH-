@@ -1,4 +1,4 @@
-#include<stdio.h>
+ #include<stdio.h>
 double cal1=0.00,cal2=0.00,cal3=0.00,cal4=0.00,cal5=0.00,cal6=0.00,cal7=0.00;
 
 int n,x;
@@ -261,6 +261,53 @@ void dairy()
     }
     printf("Total calories got from diary products today:%lf\n",cal5);
 }
+int barley()
+{ printf("Enter the fraction consumed today(consider 100gm as 1 part)\n");
+  scanf("%d",&n);
+  cal6=cal6+0.708*n;
+}
+int oats()
+{ printf("Enter the fraction consumed today(consider 500gm as 1 part)\n");
+  scanf("%d",&n);
+  cal6=cal6+3.89*n;
+}
+int brownrice()
+{ printf("Enter the fraction consumed today(consider 500gm as 1 part)\n");
+  scanf("%d",&n);
+  cal6=cal6+1.11*n;
+}
+int rice()
+{ printf("Enter the fraction consumed today(consider 500gm as 1 part)\n");
+  scanf("%d",&n);
+  cal6=cal6+0.09*n;
+}
+int wheat()
+{ printf("Enter the fraction consumed today(consider 500gm  as 1 part)\n");
+  scanf("%d",&n);
+  cal6=cal6+2.72*n;
+}
+int corn()
+{ printf("Enter the fraction consumed today(consider 500gm as 1 part)\n");
+  scanf("%d",&n);
+  cal6=cal6+0.904*n;
+}
+void grains()
+{   printf("Enter the type of grain consumed by choosing the number against it\n");
+    L:
+    printf("\n1.Barley\n2.Oats\n3.Brown rice\n4.Rice5\n.Wheat\n6.Corn\n7.Exit\n");
+    scanf("%d",&x);
+    switch(x)
+    {  case 1:barley();goto L;
+       case 2:oats();goto L;
+       case 3:brownrice();goto L;
+       case 4:rice();goto L;
+       case 5:wheat();goto L;
+       case 6:corn();goto L;
+       case 7:break;
+    }
+    printf("Total calories got from grains today:%lf",cal6);
+}
+    
 void main()
 {   printf("Enter the food item consumed by choosing the number against it\n");
     L:
@@ -273,7 +320,7 @@ void main()
        case 3:fruits();goto L;
        case 4:vegetables();goto L;
        case 5:dairy();goto L;
-       //case 6:grains();goto L;
+       case 6:grains();goto L;
        //case 7:grampulses();goto L;
        case 8:break;
     }
