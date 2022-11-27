@@ -378,7 +378,7 @@ void main()
     }
     printf("Total calories got today(overall):%lf\n",cal1+cal2+cal3+cal4+cal5+cal6+cal7);
     if(cal1==0.00)
-    printf("You haven't consumed fish today!!\nChances of vitamin anf fat deficiency\n");
+    printf("You haven't consumed fish today!!\nChances of vitamin and fat deficiency\n");
     if(cal2==0.00)
     printf("You haven't consumed meat today!!\nChances of protein deficiency\n");
     if(cal3==0.00)
