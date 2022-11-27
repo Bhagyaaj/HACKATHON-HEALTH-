@@ -307,6 +307,58 @@ void grains()
     }
     printf("Total calories got from grains today:%lf",cal6);
 }
+int dry_beans()
+{ printf("Enter the amount consumed in gram\n");
+  scanf("%d",&n);
+  cal7=cal7+3.33*n;
+}
+int lentils()
+{ printf("Enter the amount consumed in gram\n");
+  scanf("%d",&n);
+  cal7=cal7+1.66*n;
+}
+int chick_peas()
+{ printf("Enter the amount consumed in gram\n");
+  scanf("%d",&n);
+  cal7=cal7+3.64*n;
+}
+int lupins()
+{ printf("Enter the amount consumed in gram\n");
+  scanf("%d",&n);
+  cal7=cal7+3.70*n;
+}
+int dry_peas()
+{ printf("Enter the amount consumed in gram\n");
+  scanf("%d",&n);
+  cal7=cal7+1.67*n;
+}
+int green_gram()
+{ printf("Enter the amount consumed in gram\n");
+  scanf("%d",&n);
+  cal7=cal7+3.47*n;
+}
+int black_gram()
+{ printf("Enter the amount consumed in gram\n");
+  scanf("%d",&n);
+  cal7=cal7+3*n;
+}
+void grampulses()
+{   printf("Enter the type of grain consumed by choosing the number against it\n");
+    L:
+    printf("\n1.Dry beans\n2.Lentils\n3.Chick peas\n4.Lupins5\n.Dry peas\n6.Green gram\n7.Black gram\n8.Exit\n");
+    scanf("%d",&x);
+    switch(x)
+    {  case 1:dry_beans();goto L;
+       case 2:lentils();goto L;
+       case 3:chick_peas();goto L;
+       case 4:lupins();goto L;
+       case 5:dry_peas();goto L;
+       case 6:green_gram();goto L;
+       case 7:black_gram();goto L;
+       case 8:break;
+    }
+    printf("Total calories got from pulses and grams today:%lf",cal7);
+}
     
 void main()
 {   printf("Enter the food item consumed by choosing the number against it\n");
@@ -321,7 +373,7 @@ void main()
        case 4:vegetables();goto L;
        case 5:dairy();goto L;
        case 6:grains();goto L;
-       //case 7:grampulses();goto L;
+       case 7:grampulses();goto L;
        case 8:break;
     }
     printf("Total calories got today(overall):%lf\n",cal1+cal2+cal3+cal4+cal5+cal6+cal7);
