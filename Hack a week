@@ -1,0 +1,300 @@
+#include<stdio.h>
+double cal1=0.00,cal2=0.00,cal3=0.00,cal4=0.00,cal5=0.00,cal6=0.00,cal7=0.00;
+
+int n,x;
+double Salmon()
+{ printf("Enter the amount consumed in gram: \n");
+  scanf("%d",&n);
+  cal1=cal1+(2.08*n);
+}
+double Tuna()
+{ printf("Enter the amount consumed in gram: \n");
+  scanf("%d",&n);
+  cal1=cal1+(1.53*n);
+}
+double Crust()
+{ printf("Enter the amount consumed in gram: \n");
+  scanf("%d",&n);
+  cal1=cal1+(1.05*n);
+}
+double Tilapa()
+{ printf("Enter the amount consumed in gram: \n");
+  scanf("%d",&n);
+  cal1=cal1+(1.28*n);
+}
+double Catfish()
+{printf("Enter the amount consumed in gram: \n");
+  scanf("%d",&n);
+  cal1=cal1+(2.40*n);
+}
+double Shellfish()
+{ printf("Enter the amount consumed in gram: \n");
+  scanf("%d",&n);
+  cal1=cal1+(0.685*n);
+}
+double Sardines()
+{ printf("Enter the amount consumed in gram: \n");
+  scanf("%d",&n);
+  cal1=cal1+(2.08*n);
+}
+double Freshwater()
+{ printf("Enter the amount consumed in gram: \n");
+  scanf("%d",&n);
+  cal1=cal1+(2.06*n);
+}
+void fish()
+{   printf("Enter the type of fish consumed by choosing the number against it\n");
+    L:
+    printf("\t FISHES");
+    printf("\n1.Salmon\n2.Tuna\n3.Crustaceans(Shrimp,Prawns,Lobster,Crabs)\n4.Tilapa\n5.Catfish\n6.Shellfish(Calms,Oysters,Mussels,Scallops)\n7.Sardines\n8.Freshwater Fishes\n9.Exit\n");
+    scanf("%d",&x);
+    switch(x)
+    {  case 1:Salmon();goto L;
+       case 2:Tuna();goto L;
+       case 3:Crust();goto L;
+       case 4:Tilapa();goto L;
+       case 5:Catfish();goto L;
+       case 6:Shellfish();goto L;
+       case 7:Sardines();goto L;
+       case 8:Freshwater();goto L;
+       case 9:break;
+    }
+    printf("Total calories got from fish today:%lf\n",cal1);
+}
+double Chicken()
+{ printf("Enter the amount consumed in gram: \n");
+  scanf("%d",&n);
+  cal2=cal2+(2.39*n);
+}
+double Lamb()
+{ printf("Enter the amount consumed in gram: \n");
+  scanf("%d",&n);
+  cal2=cal2+(2.58*n);
+}
+double Beef()
+{ printf("Enter the amount consumed in gram: \n");
+  scanf("%d",&n);
+  cal2=cal2+(2.5*n);
+}
+double Pork()
+{ printf("Enter the amount consumed in gram: \n");
+  scanf("%d",&n);
+  cal2=cal2+(2.42*n);
+}
+double Duck()
+{printf("Enter the amount consumed in gram: \n");
+  scanf("%d",&n);
+  cal2=cal2+(3.36*n);
+}
+double Rabbit()
+{ printf("Enter the amount consumed in gram: \n");
+  scanf("%d",&n);
+  cal2=cal2+(1.36*n);
+}
+double Camel()
+{ printf("Enter the amount consumed in gram: \n");
+  scanf("%d",&n);
+  cal2=cal2+(1.08*n);
+}
+double Turkey()
+{ printf("Enter the amount consumed in gram: \n");
+  scanf("%d",&n);
+  cal2=cal2+(1.89*n);
+}
+double Minced()
+{ printf("Enter the amount consumed in gram: \n");
+  scanf("%d",&n);
+  cal2=cal2+(2.768*n);
+}
+void meat()
+{   printf("Enter the type of meat consumed by choosing the number against it\n");
+    L:
+    printf("\t MEAT");
+    printf("\n1.Chicken\n2.Lamb\n3.Beef\n4.Pork\n5.Duck\n6.Rabbit\n7.Camel\n8.Turkey\n9.Minced Meats\n10.Exit\n");
+    scanf("%d",&x);
+    switch(x)
+    {  case 1:Chicken();goto L;
+       case 2:Lamb();goto L;
+       case 3:Beef();goto L;
+       case 4:Pork();goto L;
+       case 5:Duck();goto L;
+       case 6:Rabbit();goto L;
+       case 7:Camel();goto L;
+       case 8:Turkey();goto L;
+       case 9:Minced();goto L;
+       case 10:break;
+    }
+    printf("Total calories got from meat today:%lf\n",cal2);
+}
+int berries()
+{ printf("Enter the fraction consumed today(consider a blackberry as 1 part)\n");
+  scanf("%d",&n);
+  cal3=cal3+n;
+}
+int pits()
+{ printf("Enter the fraction consumed today(consider a berry as 1 part)\n");
+  scanf("%d",&n);
+  cal3=cal3+4*n;
+}
+int core()
+{ printf("Enter the fraction consumed today(consider an apple as 1 part)\n");
+  scanf("%d",&n);
+  cal3=cal3+95*n;
+}
+int citrus()
+{ printf("Enter the fraction consumed today(consider an orange as 1 part)\n");
+  scanf("%d",&n);
+  cal3=cal3+45*n;
+}
+int melons()
+{ printf("Enter the fraction consumed today(consider a full watermelon as 1 part)\n");
+  scanf("%d",&n);
+  cal3=cal3+1360*n;
+}
+int tropical()
+{ printf("Enter the fraction consumed today(consider a pineapple as 1 part)\n");
+  scanf("%d",&n);
+  cal3=cal3+452*n;
+}
+void fruits()
+{   printf("Enter the type of fruit consumed by choosing the number against it\n");
+    L:
+    printf("\n1. Berries(blackberries, cranberries, blueberries, red and black raspberries, strawberries, and grapes)\n2.Pits(cherries, apricots, nectarines, peaches, and plums)\n3.Core(apples and pears)\n4.Citrus Fruits(oranges, tangerines, grapefruits, kumquats, lemons, and limes\n5.Melons(cantaloupe, casaba ,honeydew, and watermelon)\n6.Tropical fruits(avocados, coconut, bananas, figs, dates, guavas, mangoes, papayas, pineapples, pomegranates, and kiwi)\n7.Exit\n");
+    scanf("%d",&x);
+    switch(x)
+    {  case 1:berries();goto L;
+       case 2:pits();goto L;
+       case 3:core();goto L;
+       case 4:citrus();goto L;
+       case 5:melons();goto L;
+       case 6:tropical();goto L;
+       case 7:break;
+    }
+    printf("Total calories got from fruits today:%lf\n",cal3);
+}
+int leafy()
+{ printf("Enter the fraction consumed today(consider a  spinach as 1 part)\n");
+  scanf("%d",&n);
+  cal4=cal4+n;
+}
+int marrow ()
+{ printf("Enter the fraction consumed today(consider a pumkin as 1 part)\n");
+  scanf("%d",&n);
+  cal4=cal4+26*n;
+}
+int root()
+{ printf("Enter the fraction consumed today(consider a radish as 1 part)\n");
+  scanf("%d",&n);
+  cal4=cal4+48*n;
+}
+
+int ediblestem()
+{ printf("Enter the fraction consumed today(consider a cauliflower as 1 part)\n");
+  scanf("%d",&n);
+  cal4=cal4+25*n;
+}
+int allium()
+{ printf("Enter the fraction consumed today(consider a onion as 1 part)\n");
+  scanf("%d",&n);
+  cal4=cal4+40*n;
+}
+void vegetables()
+{   printf("Enter the type of vegetable consumed by choosing the number against it\n");
+    L:
+    printf("\n1.Leafy vegetables(spinash,broccoli,lettuce and cabbage)\n2.Marrow(cucumber,melon,pumkin and bottle guard)\n3.Root(radish,carrot, potato, ginger)\n4.Edible stem(radish, celery, asperagus and cauliflower)\n5.Allium(onion,garlic and leeks)\n6.Exit\n");
+    scanf("%d",&x);
+    switch(x)
+    {  case 1:leafy();goto L;
+       case 2:marrow();goto L;
+       case 3:root();goto L;
+       case 4:ediblestem();goto L;
+       case 5:allium();goto L;
+       case 6:break;
+    }
+    printf("Total calories got from vegetables today:%lf\n",cal4);
+}
+double Milk()
+{ printf("Enter the amount consumed as in (litres): \n");
+  scanf("%d",&n);
+  cal5=cal5+(630*n);
+}
+double Cream()
+{ printf("Enter the amount consumed in gram: \n");
+  scanf("%d",&n);
+  cal5=cal5+(2*n);
+}
+double Butter()
+{ printf("Enter the amount consumed in gram: \n");
+  scanf("%d",&n);
+  cal5=cal5+(7.17*n);
+}
+double Cheese()
+{ printf("Enter the amount consumed in gram: \n");
+  scanf("%d",&n);
+  cal5=cal5+(4*n);
+}
+double Lactose_free_Milk()
+{printf("Enter the amount consumed in lires: \n");
+  scanf("%d",&n);
+  cal5=cal5+(590*n);
+}
+double Yoghurt()
+{ printf("Enter the amount consumed in gram: \n");
+  scanf("%d",&n);
+  cal5=cal5+(1*n);
+}
+
+void dairy()
+{   printf("Enter the diary product consumed by choosing the number against it\n");
+    L:
+    printf("\t DIARY PRODUCTS");
+    printf("\n1.Milk\n2.Cream\n3.Butter\n4.Cheese\n5.Lactose free milk\n6.Yoghurt\n7.Exit\n");
+    scanf("%d",&x);
+    switch(x)
+    {  case 1:Milk();goto L;
+       case 2:Cream();goto L;
+       case 3:Butter();goto L;
+       case 4:Cheese();goto L;
+       case 5:Lactose_free_Milk();goto L;
+       case 6:Yoghurt();goto L;
+       case 7:break;
+    }
+    printf("Total calories got from diary products today:%lf\n",cal5);
+}
+void main()
+{   printf("Enter the food item consumed by choosing the number against it\n");
+    L:
+    printf("\t FOOD ITEMS");
+    printf("\n1.FISH\n2.MEAT\n3.FRUITS\n4.VEGETABLES\n5.DAIRY PRODUCTS\n6.GRAINS\n7.GRAMS AND PULSES\n8.EXIT\n");
+    scanf("%d",&x);
+    switch(x)
+    {  case 1:fish();goto L;
+       case 2:meat();goto L;
+       case 3:fruits();goto L;
+       case 4:vegetables();goto L;
+       case 5:dairy();goto L;
+       //case 6:grains();goto L;
+       //case 7:grampulses();goto L;
+       case 8:break;
+    }
+    printf("Total calories got today(overall):%lf\n",cal1+cal2+cal3+cal4+cal5+cal6+cal7);
+    if(cal1==0.00)
+    printf("You haven't consumed fish today!!\nChances of vitamin anf fat deficiency\n");
+    if(cal2==0.00)
+    printf("You haven't consumed meat today!!\nChances of protein deficiency\n");
+    if(cal3==0.00)
+    printf("You haven't consumed fruits today!!\nChances of vitamin,antioxidants and fibre deficiency\n");
+    if(cal4==0.00)
+    printf("You haven't consumed vegetables today!!\nChances of potassium,fibre and vitamin deficiency\n");
+    if(cal5==0.00)
+    printf("You haven't consumed dairy today!!\nChances of calcium,vitamin(B2,B12) deficiency\n");
+    if(cal6==0.00)
+    printf("You haven't consumed grains today!!\nChances of carbohydrate(mainly),fibre,vitamin and mineral deficiency\n");
+    if(cal7==0.00)
+    printf("You haven't consumed grams and pulses today!!\nChances of protein and fibre deficiency\n");
+    if(cal1!=0.00&&cal2!=0.00&&cal3!=0.00&&cal4!=0.00&&cal5!=0.00&&cal6!=0.00&&cal7&&(cal1+cal2+cal3+cal4+cal5+cal6+cal7)>=2200)
+    printf("CONGRATS!!You had a complete balanced diet today\nGOOD HEALTH WISHES\n");
+    if(cal1!=0.00&&cal2!=0.00&&cal3!=0.00&&cal4!=0.00&&cal5!=0.00&&cal6!=0.00&&cal7&&(cal1+cal2+cal3+cal4+cal5+cal6+cal7)<2200)
+    printf("You had included all food items but the amount doesn't meet the calorie requirements!!\nEAT MORE\n");
+    
+}
