@@ -294,7 +294,7 @@ int corn()
 void grains()
 {   printf("Enter the type of grain consumed by choosing the number against it\n");
     L:
-    printf("\n1.Barley\n2.Oats\n3.Brown rice\n4.Rice5\n.Wheat\n6.Corn\n7.Exit\n");
+    printf("\n1.Barley\n2.Oats\n3.Brown rice\n4.Rice\n5.Wheat\n6.Corn\n7.Exit\n");
     scanf("%d",&x);
     switch(x)
     {  case 1:barley();goto L;
