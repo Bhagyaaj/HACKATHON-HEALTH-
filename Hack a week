@@ -175,7 +175,7 @@ void fruits()
 int leafy()
 { printf("Enter the fraction consumed today(consider a  spinach as 1 part)\n");
   scanf("%d",&n);
-  cal4=cal4+n;
+  cal4=cal4+23*n;
 }
 int marrow ()
 { printf("Enter the fraction consumed today(consider a pumkin as 1 part)\n");
